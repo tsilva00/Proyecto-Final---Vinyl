@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the meta description of the webpage. It provides a brief summary of the content.">
+
+    <title>HAUS</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Playfair -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- Barlow Condensed -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        
+    <!-- SCRIPT -->
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__li"><a href="#sobre" class="header__a">Sobre</a></li>
+                <li class="header__li"><a href="#generos" class="header__a">Géneros</a></li>
+            </ul>
+        </nav>
+        <img src="./assets/img/Haus-Logo-White.webp" alt="" class="header__img">
+            <svg class="header__icon icon-cart-empty" aria-hidden="true" focusable="false"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+                <path
+                    d="m15.75 11.8h-3.16l-.77 11.6a5 5 0 0 0 4.99 5.34h7.38a5 5 0 0 0 4.99-5.33l-.78-11.61zm0 1h-2.22l-.71 10.67a4 4 0 0 0 3.99 4.27h7.38a4 4 0 0 0 4-4.27l-.72-10.67h-2.22v.63a4.75 4.75 0 1 1 -9.5 0zm8.5 0h-7.5v.63a3.75 3.75 0 1 0 7.5 0z"
+                    fill="currentColor" fill-rule="evenodd"></path>
+            </svg>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+        <!--Banner-->
+        <section class="banner" id="">
+            <article class="banner__article">
+                <h1 class="banner__h1">Haus</h1>
+            </article>
+        </section>
+
+        <!--Sobre-->
+        <h1></h1>
+        <section id="sobre" class="sobre">
+            <h1 class="sobre__h1">Explorando Vinilos</h1>
+            <div class="sobre__div">
+                <div class="sobre__img">
+                </div>
+                <p class="sobre__p">
+                    ¡Bienvenid@s a mi rincón dedicado al maravilloso mundo del vinilo! En este espacio compartiré
+                    contigo mi
+                    colección personal, repleta de joyas musicales que han marcado mi vida. Desde clásicos que resisten
+                    el
+                    paso del tiempo hasta verdaderas gemas desconocidas, te invito a explorar junto a mí este fascinante
+                    universo del vinilo. Prepárate para sumergirte en melodías que te transportarán a diferentes épocas
+                    y
+                    emociones. ¡Únete a mí en este viaje musical y descubre la magia de los surcos de vinilo!
+                </p>
+            </div>
+        </section>
+
+        <!--Generos-->
+        <section id="generos">
+            <h1 class="generos__h1">Selecciona un género musical</h1>
+            <div class="generos__div">
+                <div class="generos__div--container">
+                    <div class="generos__div--generos" onclick="clearAndGenerateArticles(hiphop)">
+                        <img class="generos__img--generos" src="./assets/img/hiphop.png" alt="">
+                        <h1 class="generos__h1--generos">HipHop</h1>
+                    </div>
+                    <div class="generos__div--generos" onclick="clearAndGenerateArticles(pop)">
+                        <img class="generos__img--generos" src="./assets/img/pop.png" alt="">
+                        <h1 class="generos__h1--generos">Pop</h1>
+                    </div>
+                    <div class="generos__div--generos" onclick="clearAndGenerateArticles(mpb)">
+                        <img class="generos__img--generos" src="./assets/img/mpb.png" alt="">
+                        <h1 class="generos__h1--generos">MPB</h1>
+                    </div>
+                    <div class="generos__div--generos" onclick="clearAndGenerateArticles(grooves)">
+                        <img class="generos__img--generos" src="./assets/img/grooves.png" alt="">
+                        <h1 class="generos__h1--generos">Organic Grooves</h1>
+                    </div>
+                    <div class="generos__div--generos" onclick="clearAndGenerateArticles(electronic)">
+                        <img class="generos__img--generos" src="./assets/img/electronic.png" alt="">
+                        <h1 class="generos__h1--generos">Electronic</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="section__h1">Vinilos</h1>
+        <section class="vinilos">
+            <div class="vinilos__div" id="vinilos__div">
+            </div>
+        </section>
+
+        <div class="popup">
+            <div class="popup__div">
+                <button id="popup__btn" class="popup__btn" onclick="closeModal()">&times;</button>
+                <div id="popup__container" class="popup__container">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <img src="./assets/img/Haus-Logo-White.webp" alt="" class="header__img">
+
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__li"><a href="#sobre" class="header__a">Sobre</a></li>
+                <li class="header__li"><a href="#generos" class="header__a">Géneros</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

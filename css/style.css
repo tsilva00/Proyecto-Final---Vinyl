@@ -174,7 +174,7 @@ body {
 .vinilos__div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
+    grid-template-rows: auto 1fr;
 
     gap: 1.875rem;
 }
@@ -515,14 +515,14 @@ p.sobre__p {
     .vinilos__div {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(auto, 1fr);
+        grid-template-rows: auto 1fr;
     }
 
     /* Generos */
     .generos__div--container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(auto, 1fr);
+        grid-template-rows: auto 1fr;
     }
 
     .generos__div--container> :nth-child(4),
@@ -567,14 +567,14 @@ p.sobre__p {
     .vinilos__div {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(auto, 1fr);
+        grid-template-rows: auto 1fr;
     }
 
     /* Generos */
     .generos__div--container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(auto, 1fr);
+        grid-template-rows: auto 1fr;
     }
 
     .generos__div--container> :first-child,

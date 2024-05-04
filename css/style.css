@@ -114,7 +114,7 @@ body {
 .generos__div--container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(1fr);
+    grid-template-rows: auto 1fr;
 }
 
 .generos__div--container> :first-child,

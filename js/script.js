@@ -333,7 +333,7 @@ var grooves = [{
   artist: "Thee Sacred Souls",
   img: "./assets/img/Organic-Grooves/THEE-SACRED-SOULS_thee-sacred-souls.webp",
   audio: "./assets/Audio/Organic-Grooves/THEE-SACRED-SOULS_thee-sacred-souls.mp3",
-  about: "For Thee Sacred Souls, the first time is often the charm. The band’s first club dates led to a record deal with the revered Daptone label; their first singles racked up more than ten million streams in a year and garnered attention from Billboard, Rolling Stone, and KCRW; and their first fans included the likes of Gary Clark Jr., The Black Pumas, Princess Nokia, and Timbaland.",
+  about: "Para Thee Sacred Souls, la primera vez suele ser la vencida. Las primeras fechas en clubes de la banda llevaron a un contrato discográfico con el venerado sello Daptone; sus primeros sencillos acumularon más de diez millones de reproducciones en un año y atrajeron la atención de Billboard, Rolling Stone y KCRW; y sus primeros fanáticos incluyeron a personas como Gary Clark Jr., The Black Pumas, Princess Nokia y Timbaland.",
   genre: "Organic Grooves"
 },
 {
